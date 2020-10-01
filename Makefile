@@ -7,7 +7,7 @@ PROGRAMMER = -c usbtiny
 OBJECTS    = serkey.o uart_send.o
 # for ATTiny85
 # see http://www.engbedded.com/fusecalc/
-FUSES       = -U lfuse:w:0x62:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m 
+FUSES       = -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m 
 
 # Tune the lines below only if you know what you are doing:
 AVRDUDE = avrdude $(PROGRAMMER) -p $(DEVICE)
